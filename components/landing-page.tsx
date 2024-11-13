@@ -86,7 +86,7 @@ export default function Component() {
                 </Button>
                 <Button 
                   variant="outline"
-                  className="px-6 py-2 text-sm md:text-base text-gray-600"
+                  className="px-6 py-2 text-sm md:text-base text-gray-600 hover:bg-gray-100"
                   onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                   Learn More
@@ -330,6 +330,13 @@ export default function Component() {
           </div>
         </div>
       </footer>
+    <button
+      onClick={handleContactClick}
+      className="fixed bottom-4 right-4 bg-green-500 text-white p-3 shadow-lg hover:bg-green-600 transition duration-300 flex items-center justify-center rounded-tl-3xl rounded-tr-3xl rounded-bl-3xl md:p-4"
+    >
+      <Phone className="w-5 h-5 mr-1 md:w-6 md:h-6 md:mr-2" />
+      <span className="text-sm md:text-base">Hubungi Kami</span>
+    </button>
     </div>
   )
 }

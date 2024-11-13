@@ -38,10 +38,10 @@ export default function Component() {
             onClick={() => window.location.reload()}
           />
           <nav className="hidden md:flex gap-8">
-            <Link href="#about" className="text-gray-700 hover:text-[#267dfd] transition-colors">About</Link>
-            <Link href="#services" className="text-gray-700 hover:text-[#267dfd] transition-colors">Services</Link>
-            <Link href="#legality" className="text-gray-700 hover:text-[#267dfd] transition-colors">Legality</Link>
-            <Link href="#contact" className="text-gray-700 hover:text-[#267dfd] transition-colors">Contact</Link>
+            <Link href="#about" className="text-gray-700 hover:text-[#267dfd] transition-colors">Tentang</Link>
+            <Link href="#services" className="text-gray-700 hover:text-[#267dfd] transition-colors">Layanan</Link>
+            <Link href="#legality" className="text-gray-700 hover:text-[#267dfd] transition-colors">Legalitas</Link>
+            <Link href="#contact" className="text-gray-700 hover:text-[#267dfd] transition-colors">Kontak</Link>
           </nav>
           <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
               <SheetTrigger asChild className="md:hidden">
@@ -68,10 +68,9 @@ export default function Component() {
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="text-center md:text-left">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-gray-600 font-bold font-['Poppins'] mb-4 md:mb-6">
-                Your Trusted
-                <span className="text-[#fd3736]"> Healthcare </span>
-                <span className="text-[#267dfd]"> Equipment </span>
-                Partner
+                Rekan Terpercaya Anda untuk
+                <span className="text-[#267dfd]"> Peralatan </span>
+                <span className="text-[#fd3736]"> Kesehatan </span>
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 md:mb-8">
                 Kami adalah distributor penyedia alat kesehatan terlengkap dan terpercaya yang berkomitmen
@@ -82,14 +81,14 @@ export default function Component() {
                   className="bg-[#267dfd] hover:bg-[#267dfd]/90 px-6 py-2 text-sm md:text-base" 
                   onClick={handleContactClick}
                 >
-                  Contact Us
+                  Hubungi Kami
                 </Button>
                 <Button 
                   variant="outline"
                   className="px-6 py-2 text-sm md:text-base text-gray-600 hover:bg-gray-100"
                   onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
                 >
-                  Learn More
+                  Selengkapnya
                 </Button>
               </div>
             </div>
@@ -110,16 +109,16 @@ export default function Component() {
       {/* About Section */}
       <section id="about" className="py-12 md:py-16 lg:py-20 px-4 bg-gray-50">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl text-gray-600 font-bold font-['Poppins'] text-center mb-8 md:mb-12">About Us</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl text-gray-600 font-bold font-['Poppins'] text-center mb-8 md:mb-12">Tentang Kami</h2>
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
-              <h3 className="text-xl md:text-2xl font-bold mb-4 text-[#267dfd] font-['Poppins']">Vision</h3>
+              <h3 className="text-xl md:text-2xl font-bold mb-4 text-[#267dfd] font-['Poppins']">Visi</h3>
               <p className="text-base md:text-lg text-gray-600 mb-6">
               Kami adalah distributor alat kesehatan terlengkap dan terpercaya, berkomitmen menyediakan solusi 
               kesehatan berkualitas. Dengan pengalaman bertahun-tahun, kami menjadi mitra tepercaya bagi berbagai 
               institusi medis, rumah sakit, klinik, dan fasilitas kesehatan lainnya.
               </p>
-              <h3 className="text-xl md:text-2xl font-bold mb-4 text-[#fd3736] font-['Poppins']">Mission</h3>
+              <h3 className="text-xl md:text-2xl font-bold mb-4 text-[#fd3736] font-['Poppins']">Misi</h3>
               <ul className="space-y-3 text-base md:text-lg text-gray-600">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-[#267dfd] mt-1 flex-shrink-0" />
@@ -156,14 +155,14 @@ export default function Component() {
       {/* Services Section */}
       <section id="services" className="py-12 md:py-16 lg:py-20 px-4">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl text-gray-600 font-bold font-['Poppins'] text-center mb-8 md:mb-12">Our Services</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl text-gray-600 font-bold font-['Poppins'] text-center mb-8 md:mb-12">Layanan Kami</h2>
           <div className="grid md:grid-cols-3 gap-6 md:gap-8">
             <Card className="group hover:shadow-lg transition-all">
               <CardContent className="p-6 text-center">
                 <div className="w-16 h-16 bg-[#267dfd]/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-[#267dfd] transition-colors">
                   <ShieldCheck className="w-8 h-8 text-[#267dfd] group-hover:text-white" />
                 </div>
-                <h3 className="text-lg md:text-xl text-gray-600 font-bold mb-2 font-['Poppins']">Trust</h3>
+                <h3 className="text-lg md:text-xl text-gray-600 font-bold mb-2 font-['Poppins']">Terpercaya</h3>
                 <p className="text-sm md:text-base text-gray-600">Mitra tepercaya bagi institusi medis dan fasilitas kesehatan dengan pengalaman bertahun-tahun dalam industri.</p>
               </CardContent>
             </Card>
@@ -172,7 +171,7 @@ export default function Component() {
                 <div className="w-16 h-16 bg-[#fd3736]/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-[#fd3736] transition-colors">
                   <PiggyBank className="w-8 h-8 text-[#fd3736] group-hover:text-white" />
                 </div>
-                <h3 className="text-lg md:text-xl text-gray-600 font-bold mb-2 font-['Poppins']">Affordable</h3>
+                <h3 className="text-lg md:text-xl text-gray-600 font-bold mb-2 font-['Poppins']">Terjangkau</h3>
                 <p className="text-sm md:text-base text-gray-600">Solusi kesehatan berkualitas dengan harga terjangkau untuk memenuhi kebutuhan berbagai fasilitas kesehatan.</p>
               </CardContent>
             </Card>
@@ -181,7 +180,7 @@ export default function Component() {
                 <div className="w-16 h-16 bg-[#267dfd]/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-[#267dfd] transition-colors">
                   <Award className="w-8 h-8 text-[#267dfd] group-hover:text-white" />
                 </div>
-                <h3 className="text-lg md:text-xl text-gray-600 font-bold mb-2 font-['Poppins']">Excellent</h3>
+                <h3 className="text-lg md:text-xl text-gray-600 font-bold mb-2 font-['Poppins']">Terbaik</h3>
                 <p className="text-sm md:text-base text-gray-600">Pelayanan prima dan produk berkualitas tinggi, termasuk alat medis, perlengkapan rumah sakit, dan lain-lain.</p>
               </CardContent>
             </Card>
@@ -192,7 +191,7 @@ export default function Component() {
       {/* Legality Section */}
       <section id="legality" className="py-12 md:py-16 lg:py-20 px-4 bg-gray-50">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl text-gray-600 font-bold font-['Poppins'] text-center mb-8 md:mb-12">Legality</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl text-gray-600 font-bold font-['Poppins'] text-center mb-8 md:mb-12">Legalitas</h2>
           <div className="grid md:grid-cols-2 gap-6 md:gap-8">
             <Image
               src="/images/legal-document-1.png"
@@ -222,20 +221,20 @@ export default function Component() {
       {/* Contact Section */}
       <section id="contact" className="py-12 md:py-16 lg:py-20 px-4">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl text-gray-600 font-bold font-['Poppins'] text-center mb-8 md:mb-12">Contact Us</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl text-gray-600 font-bold font-['Poppins'] text-center mb-8 md:mb-12">Kontak Kami</h2>
           <div className="grid md:grid-cols-2 gap-8 md:gap-12">
             <div className="space-y-6">
               <div className="flex items-start gap-4">
               <MapPin className="w-6 h-6 text-[#267dfd] mt-1" />
               <div>
-                <h3 className="text-gray-600 font-bold mb-1 font-['Poppins']">Address</h3>
+                <h3 className="text-gray-600 font-bold mb-1 font-['Poppins']">Alamat</h3>
                 <Link href="https://maps.app.goo.gl/zPrUVR9ZM9vCswKr6" className="text-gray-600 hover:text-[#267dfd] transition-colors">Ps Pramuka, Lt Dasar, Aks 127, Jakarta Timur</Link>
               </div>
               </div>
               <div className="flex items-start gap-4">
               <Phone className="w-6 h-6 text-[#267dfd] mt-1" />
               <div>
-                <h3 className="text-gray-600 font-bold mb-1 font-['Poppins']">Phone</h3>
+                <h3 className="text-gray-600 font-bold mb-1 font-['Poppins']">Telepon</h3>
                 <Link href="https://wa.me/6281218351958" className="text-gray-600 hover:text-[#267dfd] transition-colors">+62 812-1835-1958</Link>
               </div>
               </div>
@@ -291,16 +290,16 @@ export default function Component() {
               />
             </div>
             <div>
-              <h3 className="text-lg font-bold mb-4 font-['Poppins']">Navigation</h3>
+              <h3 className="text-lg font-bold mb-4 font-['Poppins']">Navigasi</h3>
               <ul className="space-y-2 text-sm md:text-base">
-                <li><Link href="#about" className="text-gray-400 hover:text-white transition-colors">About</Link></li>
-                <li><Link href="#services" className="text-gray-400 hover:text-white transition-colors">Services</Link></li>
-                <li><Link href="#legality" className="text-gray-400 hover:text-white transition-colors">Legality</Link></li>
-                <li><Link href="#contact" className="text-gray-400 hover:text-white transition-colors">Contact</Link></li>
+                <li><Link href="#about" className="text-gray-400 hover:text-white transition-colors">Tentang</Link></li>
+                <li><Link href="#services" className="text-gray-400 hover:text-white transition-colors">Layanan</Link></li>
+                <li><Link href="#legality" className="text-gray-400 hover:text-white transition-colors">Legalitas</Link></li>
+                <li><Link href="#contact" className="text-gray-400 hover:text-white transition-colors">Kontak</Link></li>
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-bold mb-4 font-['Poppins']">Contact Us</h3>
+              <h3 className="text-lg font-bold mb-4 font-['Poppins']">Kontak Kami</h3>
               <ul className="space-y-2 text-sm md:text-base">
                 <li className="flex items-center gap-2">
                   <MapPin className="w-4 h-4 flex-shrink-0" />

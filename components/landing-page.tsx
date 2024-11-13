@@ -21,7 +21,7 @@ export default function Component() {
   }, [])
 
   const handleContactClick = () => {
-    window.open('https://wa.me/6281218351958?text=Halo%20Wira%20Medical!', '_blank')
+    window.open('https://wa.me/6285179941277?text=Halo%20Wira%20Medical!', '_blank')
   }
 
   return (
@@ -42,6 +42,7 @@ export default function Component() {
             <Link href="#services" className="text-gray-700 hover:text-[#267dfd] transition-colors">Layanan</Link>
             <Link href="#legality" className="text-gray-700 hover:text-[#267dfd] transition-colors">Legalitas</Link>
             <Link href="#contact" className="text-gray-700 hover:text-[#267dfd] transition-colors">Kontak</Link>
+            <Link href="#marketplace" className="text-gray-700 hover:text-[#267dfd] transition-colors">Marketplace</Link>
           </nav>
           <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
               <SheetTrigger asChild className="md:hidden">
@@ -56,6 +57,7 @@ export default function Component() {
                 <Link href="#services" className="text-lg text-gray-700 hover:text-[#267dfd] transition-colors" onClick={() => setIsMenuOpen(false)}>Services</Link>
                 <Link href="#legality" className="text-lg text-gray-700 hover:text-[#267dfd] transition-colors" onClick={() => setIsMenuOpen(false)}>Legality</Link>
                 <Link href="#contact" className="text-lg text-gray-700 hover:text-[#267dfd] transition-colors" onClick={() => setIsMenuOpen(false)}>Contact</Link>
+                <Link href="#marketplace" className="text-lg text-gray-700 hover:text-[#267dfd] transition-colors" onClick={() => setIsMenuOpen(false)}>Marketplace</Link>
               </div>
               </SheetContent>
             </Sheet>
@@ -73,7 +75,7 @@ export default function Component() {
                 <span className="text-[#fd3736]"> Kesehatan </span>
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 md:mb-8">
-                Kami adalah distributor penyedia alat kesehatan terlengkap dan terpercaya yang berkomitmen
+                Distributor penyedia alat kesehatan terlengkap dan terpercaya yang berkomitmen
                 untuk menyediakan solusi kesehatan berkualitas tinggi kepada pelanggan kami.
               </p>
               <div className="flex justify-center md:justify-start gap-4">
@@ -98,7 +100,7 @@ export default function Component() {
                 alt="Medical Equipment Illustration"
                 width={500}
                 height={500}
-                className="relative z-10 w-full max-w-[500px] md:max-w-[600px] mx-auto rounded-3xl md:pb-20"
+                className="relative z-10 w-full max-w-[400px] md:max-w-[5 00px] mx-auto rounded-3xl md:pb-20"
                 priority
               />
             </div>
@@ -235,7 +237,7 @@ export default function Component() {
               <Phone className="w-6 h-6 text-[#267dfd] mt-1" />
               <div>
                 <h3 className="text-gray-600 font-bold mb-1 font-['Poppins']">Telepon</h3>
-                <Link href="https://wa.me/6281218351958" className="text-gray-600 hover:text-[#267dfd] transition-colors">+62 812-1835-1958</Link>
+                <Link href="https://wa.me/6285179941277" className="text-gray-600 hover:text-[#267dfd] transition-colors">+62 851-7994-1277</Link>
               </div>
               </div>
               <div className="flex items-start gap-4">
@@ -276,6 +278,33 @@ export default function Component() {
         </div>
       </section>
 
+      {/* Marketplace Section */}
+      <section id="marketplace" className="py-12 md:py-16 lg:py-20 px-4 bg-gray-50">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl text-gray-600 font-bold font-['Poppins'] text-center mb-8 md:mb-12">Marketplace</h2>
+          <div className="flex justify-center gap-8">
+        {/* <Link href="https://shopee.co.id/wira_medical" target="_blank" rel="noopener noreferrer">
+          <Image
+            src="/images/shopee-logo.png"
+            alt="Shopee Logo"
+            width={150}
+            height={150}
+            className="hover:scale-110 transition-transform"
+          />
+        </Link> */}
+        <Link href="https://www.tokopedia.com/wiramedical" target="_blank" rel="noopener noreferrer">
+          <Image
+            src="/images/tokopedia.png"
+            alt="Tokopedia Logo"
+            width={150}
+            height={150}
+            className="hover:scale-110 transition-transform"
+          />
+        </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12 px-4">
         <div className="container mx-auto max-w-6xl">
@@ -296,10 +325,11 @@ export default function Component() {
                 <li><Link href="#services" className="text-gray-400 hover:text-white transition-colors">Layanan</Link></li>
                 <li><Link href="#legality" className="text-gray-400 hover:text-white transition-colors">Legalitas</Link></li>
                 <li><Link href="#contact" className="text-gray-400 hover:text-white transition-colors">Kontak</Link></li>
+                <li><Link href="#marketplace" className="text-gray-400 hover:text-white transition-colors">Marketplace</Link></li>
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-bold mb-4 font-['Poppins']">Kontak Kami</h3>
+              <h3 className="text-lg font-bold mb-4 font-['Poppins']">Kontak</h3>
               <ul className="space-y-2 text-sm md:text-base">
                 <li className="flex items-center gap-2">
                   <MapPin className="w-4 h-4 flex-shrink-0" />
@@ -307,7 +337,7 @@ export default function Component() {
                 </li>
                 <li className="flex items-center gap-2">
                   <Phone className="w-4 h-4 flex-shrink-0" />
-                  <Link href="https://wa.me/6281218351958" className="text-gray-400 hover:text-white transition-colors">+62 812-1835-1958</Link>
+                  <Link href="https://wa.me/6285179941277" className="text-gray-400 hover:text-white transition-colors">+62 851-7994-1277</Link>
                 </li>
                 <li className="flex items-center gap-2">
                   <Mail className="w-4 h-4 flex-shrink-0" />

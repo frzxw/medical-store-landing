@@ -4,7 +4,9 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Mail, MapPin, Menu, Phone, Instagram, CheckCircle2, ShieldCheck, PiggyBank, Award, Facebook } from 'lucide-react'
-import Image from "next/image"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faTiktok } from "@fortawesome/free-brands-svg-icons"
+import Image from "next/image"  
 import Link from "next/link"
 import { useEffect, useState } from "react"
 
@@ -114,29 +116,54 @@ export default function Component() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl text-gray-600 font-bold font-['Poppins'] text-center mb-8 md:mb-12">Tentang Kami</h2>
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
+              <p className="text-base md:text-lg text-gray-600 mb-6">
+              Kami adalah distributor alat kesehatan terlengkap dan terpercaya, 
+              berkomitmen menyediakan solusi kesehatan berkualitas. Dengan pengalaman 
+              bertahun-tahun, kami menjadi mitra tepercaya bagi berbagai institusi medis, 
+              rumah sakit, klinik, dan fasilitas kesehatan lainnya.
+              </p>
               <h3 className="text-xl md:text-2xl font-bold mb-4 text-[#267dfd] font-['Poppins']">Visi</h3>
               <p className="text-base md:text-lg text-gray-600 mb-6">
-              Kami adalah distributor alat kesehatan terlengkap dan terpercaya, berkomitmen menyediakan solusi 
-              kesehatan berkualitas. Dengan pengalaman bertahun-tahun, kami menjadi mitra tepercaya bagi berbagai 
-              institusi medis, rumah sakit, klinik, dan fasilitas kesehatan lainnya.
+              Menjadi pilihan utama masyarakat Indonesia dalam memenuhi kebutuhan alat kesehatan dengan 
+              memberikan pengalaman berbelanja yang mudah, aman, dan memuaskan.
               </p>
               <h3 className="text-xl md:text-2xl font-bold mb-4 text-[#fd3736] font-['Poppins']">Misi</h3>
               <ul className="space-y-3 text-base md:text-lg text-gray-600">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-[#267dfd] mt-1 flex-shrink-0" />
-                  <span>Menyediakan akses yang mudah dan terjangkau terhadap alat kesehatan berkualitas</span>
+                  <span>
+                  Menyediakan produk alat kesehatan berkualitas tinggi dari merek-merek terpercaya.
+                  </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-[#267dfd] mt-1 flex-shrink-0" />
-                  <span>Bermitra dengan produsen terkemuka untuk menghadirkan produk inovatif</span>
+                  <span>
+                  Menawarkan harga yang kompetitif dan transparan untuk semua produk kami.
+                  </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-[#267dfd] mt-1 flex-shrink-0" />
-                  <span>Memberikan pelayanan yang responsif dan terpercaya</span>
+                  <span>
+                  Berinovasi dalam layanan untuk memenuhi kebutuhan kesehatan Anda.
+                  </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-[#267dfd] mt-1 flex-shrink-0" />
-                  <span>Berkomitmen pada keberlanjutan lingkungan dan sosial</span>
+                  <span>
+                  Tim profesional siap membantu Anda memilih produk yang tepat.
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-[#267dfd] mt-1 flex-shrink-0" />
+                  <span>
+                  Mudah diakses melalui website dan toko fisik.
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-[#267dfd] mt-1 flex-shrink-0" />
+                  <span>
+                  Memberikan informasi akurat seputar kesehatan dan alat kesehatan.
+                  </span>
                 </li>
               </ul>
             </div>
@@ -190,38 +217,8 @@ export default function Component() {
         </div>
       </section>
 
-      {/* Legality Section */}
-      <section id="legality" className="py-12 md:py-16 lg:py-20 px-4 bg-gray-50">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl text-gray-600 font-bold font-['Poppins'] text-center mb-8 md:mb-12">Legalitas</h2>
-          <div className="grid md:grid-cols-2 gap-6 md:gap-8">
-            <Image
-              src="/images/legal-document-1.png"
-              alt="Company Legal Document"
-              width={500}
-              height={700}
-              className="rounded-lg shadow-lg mx-auto w-full max-w-[500px]"
-            />
-            <Image
-              src="/images/legal-document-2.png"
-              alt="Company Legal Document"
-              width={500}
-              height={700}
-              className="rounded-lg shadow-lg mx-auto w-full max-w-[500px]"
-            />
-            <Image
-              src="/images/npwp.png"
-              alt="Company NPWP"
-              width={500}
-              height={300}
-              className="rounded-lg shadow-lg mx-auto w-full max-w-[500px]"
-            />
-          </div>
-        </div>
-      </section>
-
       {/* Contact Section */}
-      <section id="contact" className="py-12 md:py-16 lg:py-20 px-4">
+      <section id="contact" className="py-12 md:py-16 lg:py-20 px-4 bg-gray-50">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-2xl sm:text-3xl md:text-4xl text-gray-600 font-bold font-['Poppins'] text-center mb-8 md:mb-12">Kontak Kami</h2>
           <div className="grid md:grid-cols-2 gap-8 md:gap-12">
@@ -261,12 +258,19 @@ export default function Component() {
                 <Link href="https://www.instagram.com/wira_medical/" className="text-gray-600 hover:text-[#267dfd] transition-colors">wira_medical</Link>
               </div>
               </div>
+              <div className="flex items-start gap-4">
+              <FontAwesomeIcon icon={faTiktok} className="w-6 h-6 text-[#267dfd] mt-1" />
+              <div>
+                <h3 className="text-gray-600 font-bold mb-1 font-['Poppins']">TikTok</h3>
+                <Link href="https://www.tiktok.com/@wiramedical" className="text-gray-600 hover:text-[#267dfd] transition-colors">wiramedical</Link>
+              </div>
+              </div>
             </div>
             <div className="relative">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.501052822076!2d106.8529304883603!3d-6.197430044689669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f57ccdb8579d%3A0x4292cc8c31894d3e!2sWira%20Medical!5e0!3m2!1sen!2sid!4v1731485698755!5m2!1sen!2sid"
                 width="100%"
-                height="400"
+                height="430"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
@@ -279,29 +283,47 @@ export default function Component() {
       </section>
 
       {/* Marketplace Section */}
-      <section id="marketplace" className="py-12 md:py-16 lg:py-20 px-4 bg-gray-50">
+      <section id="marketplace" className="py-12 md:py-16 lg:py-20 px-">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-2xl sm:text-3xl md:text-4xl text-gray-600 font-bold font-['Poppins'] text-center mb-8 md:mb-12">Marketplace</h2>
-          <div className="flex justify-center gap-8">
-        {/* <Link href="https://shopee.co.id/wira_medical" target="_blank" rel="noopener noreferrer">
-          <Image
-            src="/images/shopee-logo.png"
-            alt="Shopee Logo"
-            width={150}
-            height={150}
-            className="hover:scale-110 transition-transform"
-          />
-        </Link> */}
-        <Link href="https://www.tokopedia.com/wiramedical" target="_blank" rel="noopener noreferrer">
-          <Image
-            src="/images/tokopedia.png"
-            alt="Tokopedia Logo"
-            width={150}
-            height={150}
-            className="hover:scale-110 transition-transform"
-          />
-        </Link>
-          </div>
+            <div className="flex justify-center gap-8 flex-wrap">
+            <Link href="https://blibli.onelink.me/GNtk/s4pyev5q" target="_blank" rel="noopener noreferrer">
+              <Image
+              src="/images/blibli.png"
+              alt="Blibli Logo"
+              width={150}
+              height={150}
+              className="hover:scale-110 transition-transform w-full sm:w-auto h-32 sm:h-48"
+              />
+            </Link>
+            <Link href="https://www.lazada.co.id/shop/wira-medical" target="_blank" rel="noopener noreferrer">
+              <Image
+              src="/images/lazada.png"
+              alt="Lazada Logo"
+              width={150}
+              height={150}
+              className="hover:scale-110 transition-transform w-full sm:w-auto h-32 sm:h-48"
+              />
+            </Link>
+            <Link href="https://shopee.co.id/wira_medical" target="_blank" rel="noopener noreferrer">
+              <Image
+              src="/images/shopee.png"
+              alt="Shopee Logo"
+              width={150}
+              height={150}
+              className="hover:scale-110 transition-transform w-full sm:w-auto h-32 sm:h-48"
+              />
+            </Link>
+            <Link href="https://www.tokopedia.com/wiramedical" target="_blank" rel="noopener noreferrer">
+              <Image
+              src="/images/tokopedia.png"
+              alt="Tokopedia Logo"
+              width={150}
+              height={150}
+              className="hover:scale-110 transition-transform w-full sm:w-auto h-32 sm:h-48"
+              />
+            </Link>
+            </div>
         </div>
       </section>
 
@@ -350,6 +372,10 @@ export default function Component() {
                 <li className="flex items-center gap-2">
                   <Instagram className="w-4 h-4 flex-shrink-0" />
                   <Link href="https://www.instagram.com/wira_medical/" className="text-gray-400 hover:text-white transition-colors">wira_medical</Link>
+                </li>
+                <li className="flex items-center gap-2">
+                  <FontAwesomeIcon icon={faTiktok} className="w-4 h-4 flex-shrink-0" />
+                  <Link href="https://www.tiktok.com/@wiramedical" className="text-gray-400 hover:text-white transition-colors">wiramedical</Link>
                 </li>
               </ul>
             </div>

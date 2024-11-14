@@ -54,9 +54,9 @@ export default function Component() {
               </SheetTrigger>
               <SheetContent className="w-[250px] p-4 bg-white">
               <div className="flex flex-col gap-6">
-                <Link href="#about" className="text-lg text-gray-700 hover:text-[#267dfd] transition-colors" onClick={() => setIsMenuOpen(false)}>About</Link>
-                <Link href="#services" className="text-lg text-gray-700 hover:text-[#267dfd] transition-colors" onClick={() => setIsMenuOpen(false)}>Services</Link>
-                <Link href="#contact" className="text-lg text-gray-700 hover:text-[#267dfd] transition-colors" onClick={() => setIsMenuOpen(false)}>Contact</Link>
+                <Link href="#about" className="text-lg text-gray-700 hover:text-[#267dfd] transition-colors" onClick={() => setIsMenuOpen(false)}>Tentang</Link>
+                <Link href="#services" className="text-lg text-gray-700 hover:text-[#267dfd] transition-colors" onClick={() => setIsMenuOpen(false)}>Layanan</Link>
+                <Link href="#contact" className="text-lg text-gray-700 hover:text-[#267dfd] transition-colors" onClick={() => setIsMenuOpen(false)}>Kontak</Link>
                 <Link href="#marketplace" className="text-lg text-gray-700 hover:text-[#267dfd] transition-colors" onClick={() => setIsMenuOpen(false)}>Marketplace</Link>
               </div>
               </SheetContent>

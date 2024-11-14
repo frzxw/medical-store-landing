@@ -42,7 +42,6 @@ export default function Component() {
           <nav className="hidden md:flex gap-8">
             <Link href="#about" className="text-gray-700 hover:text-[#267dfd] transition-colors">Tentang</Link>
             <Link href="#services" className="text-gray-700 hover:text-[#267dfd] transition-colors">Layanan</Link>
-            <Link href="#legality" className="text-gray-700 hover:text-[#267dfd] transition-colors">Legalitas</Link>
             <Link href="#contact" className="text-gray-700 hover:text-[#267dfd] transition-colors">Kontak</Link>
             <Link href="#marketplace" className="text-gray-700 hover:text-[#267dfd] transition-colors">Marketplace</Link>
           </nav>
@@ -57,7 +56,6 @@ export default function Component() {
               <div className="flex flex-col gap-6">
                 <Link href="#about" className="text-lg text-gray-700 hover:text-[#267dfd] transition-colors" onClick={() => setIsMenuOpen(false)}>About</Link>
                 <Link href="#services" className="text-lg text-gray-700 hover:text-[#267dfd] transition-colors" onClick={() => setIsMenuOpen(false)}>Services</Link>
-                <Link href="#legality" className="text-lg text-gray-700 hover:text-[#267dfd] transition-colors" onClick={() => setIsMenuOpen(false)}>Legality</Link>
                 <Link href="#contact" className="text-lg text-gray-700 hover:text-[#267dfd] transition-colors" onClick={() => setIsMenuOpen(false)}>Contact</Link>
                 <Link href="#marketplace" className="text-lg text-gray-700 hover:text-[#267dfd] transition-colors" onClick={() => setIsMenuOpen(false)}>Marketplace</Link>
               </div>
@@ -119,7 +117,7 @@ export default function Component() {
               <p className="text-base md:text-lg text-gray-600 mb-6">
               Kami adalah distributor alat kesehatan terlengkap dan terpercaya, 
               berkomitmen menyediakan solusi kesehatan berkualitas. Dengan pengalaman 
-              bertahun-tahun, kami menjadi mitra tepercaya bagi berbagai institusi medis, 
+              bertahun-tahun, kami menjadi mitra terpercaya bagi berbagai institusi medis, 
               rumah sakit, klinik, dan fasilitas kesehatan lainnya.
               </p>
               <h3 className="text-xl md:text-2xl font-bold mb-4 text-[#267dfd] font-['Poppins']">Visi</h3>
@@ -345,7 +343,6 @@ export default function Component() {
               <ul className="space-y-2 text-sm md:text-base">
                 <li><Link href="#about" className="text-gray-400 hover:text-white transition-colors">Tentang</Link></li>
                 <li><Link href="#services" className="text-gray-400 hover:text-white transition-colors">Layanan</Link></li>
-                <li><Link href="#legality" className="text-gray-400 hover:text-white transition-colors">Legalitas</Link></li>
                 <li><Link href="#contact" className="text-gray-400 hover:text-white transition-colors">Kontak</Link></li>
                 <li><Link href="#marketplace" className="text-gray-400 hover:text-white transition-colors">Marketplace</Link></li>
               </ul>

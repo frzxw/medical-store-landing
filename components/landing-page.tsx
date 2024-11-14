@@ -190,7 +190,7 @@ export default function Component() {
                   <ShieldCheck className="w-8 h-8 text-[#267dfd] group-hover:text-white" />
                 </div>
                 <h3 className="text-lg md:text-xl text-gray-600 font-bold mb-2 font-['Poppins']">Terpercaya</h3>
-                <p className="text-sm md:text-base text-gray-600">Mitra tepercaya bagi institusi medis dan fasilitas kesehatan dengan pengalaman bertahun-tahun dalam industri.</p>
+                <p className="text-sm md:text-base text-gray-600">Mitra terpercaya bagi institusi medis dan fasilitas kesehatan dengan pengalaman bertahun-tahun dalam industri.</p>
               </CardContent>
             </Card>
             <Card className="group hover:shadow-lg transition-all">
